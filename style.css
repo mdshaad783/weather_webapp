@@ -110,8 +110,43 @@ input[type="text"]{
 .wind-info div, .humidity-info div, .visibility-info div{
     text-align: center;
 }
+#copyright{
+    text-transform: uppercase;
+    font-family:'Roboto', sans-serif;
+    font-weight: 600;
+    color:#000;
+    float: right;
+    letter-spacing: 3px;
+}
+@media only screen and (max-width: 426px){
+    html {
+        font-size: 85%;
+    }
+      .container{
+        max-width: 400px;
+    }
+    input[type="text"]{
+        border-radius: 8px;
+    }
+    .search-btn{
+        padding: 9px;
+        border-radius: 6px;
+    }
+    .search-btn i{
+        font-size: 25px;
+    }
+    .wind-info, .humidity-info, .visibility-info{
+        padding: 15px 20px;
+    }
+    .humidity-info{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .description{
+        margin-left: -10px;
+    }
 
-
+}
 @media only screen and (max-width: 400px) {
     html {
       font-size: 60%;
@@ -136,5 +171,8 @@ input[type="text"]{
     .humidity-info{
         margin-left: 8px;
         margin-right: 8px;
+    }
+    #copyright{
+        margin-right: 30px;
     }
   }
