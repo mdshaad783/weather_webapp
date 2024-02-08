@@ -117,6 +117,19 @@ input[type="text"]{
     color:#000;
     float: right;
     letter-spacing: 3px;
+    margin-right:30rem ;
+}
+@media only screen and (max-width: 1025px){
+    #copyright{
+        margin-right: 13.8rem;
+        font-weight: 550;
+    }
+}
+@media only screen and (max-width: 769px){
+    #copyright{
+        margin-right: 5.7rem;
+        font-weight: 550;
+    }
 }
 @media only screen and (max-width: 426px){
     html {
@@ -144,6 +157,10 @@ input[type="text"]{
     }
     .description{
         margin-left: -10px;
+    }
+    #copyright{
+        margin-right: 2rem;
+        font-weight: 540;
     }
 
 }
