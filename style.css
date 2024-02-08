@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url('bg.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 50px auto;
+    border-radius: 1rem;
+    background:transparent;
+    box-shadow: 2px 2px 10px hsl(333, 8%, 28%);
+    max-width: 600px;
+    padding: 30px;
+}
+input[type="text"]{
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+}
+.search-btn{
+    border: none;
+    color: #000;
+    background-color: #ecf0f1;
+    padding: 12px;
+    margin-left: .6rem;
+    border-radius: .5rem;
+    transition: background-color .7s ease;
+    cursor: pointer;
+}
+.search-btn:hover{
+    color: #ecf0f1;
+    background-color: #000;
+}
+.city-date-search{
+    
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+.city-date-search .city{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+.city-date-search .date{
+    font-size: .8rem;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.temp-info{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.description-text{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.description .description-text i{
+    font-size: 1.5rem;
+    opacity: .8;
+}
+.temp{
+    font-size: 7rem;
+}
+.additional-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.wind-info, .humidity-info, .visibility-info{
+    background-color: #ecf0f1;
+    width: 150px;
+    box-shadow: 2px 2px 10px hsl(0, 0%, 54%);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+.wind-info i, .humidity-info i, .visibility-info i{
+    opacity: .9;
+}
+.wind-info div, .humidity-info div, .visibility-info div{
+    text-align: center;
+}
