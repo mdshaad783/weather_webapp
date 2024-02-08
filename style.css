@@ -110,3 +110,31 @@ input[type="text"]{
 .wind-info div, .humidity-info div, .visibility-info div{
     text-align: center;
 }
+
+
+@media only screen and (max-width: 400px) {
+    html {
+      font-size: 60%;
+    }
+    .container{
+        max-width: 300px;
+    }
+    input[type="text"]{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .search-btn{
+        padding: 8px;
+        border-radius: 10px;
+    }
+    .search-btn i{
+        font-size: 14px;
+    }
+    .wind-info, .humidity-info, .visibility-info{
+        padding: 10px 10px;
+    }
+    .humidity-info{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+  }
